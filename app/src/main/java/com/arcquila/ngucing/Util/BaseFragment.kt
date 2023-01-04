@@ -4,11 +4,13 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import androidx.appcompat.app.AppCompatActivity
+import androidx.annotation.LayoutRes
+import androidx.databinding.DataBindingUtil
+import androidx.databinding.ViewDataBinding
 import androidx.fragment.app.Fragment
 import androidx.viewbinding.ViewBinding
 
-open class BaseClass<viewBinding : ViewBinding>(private val inflateMethod: (LayoutInflater, ViewGroup?, Boolean) -> viewBinding) :
+open class BaseFragment<viewBinding : ViewDataBinding>(@LayoutRes private val layoutResId: Int) :
     Fragment() {
 
     private var _binding: viewBinding? = null
@@ -22,8 +24,11 @@ open class BaseClass<viewBinding : ViewBinding>(private val inflateMethod: (Layo
         savedInstanceState: Bundle?
     ): View? {
 
-        _binding = inflateMethod.invoke(inflater, container, false)
+        _binding = DataBindingUtil.inflate(inflater,layoutResId, container,false)
+
+//        binding.lifecycleowner = viewLifecycleOwner
         binding.initialize()
+
         return binding.root
 
     }

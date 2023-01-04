@@ -18,25 +18,25 @@ class MainActivity : AppCompatActivity() {
         setContentView(binding.root)
 
 
-        initAction()
+//        initAction()
 
     }
 
-    private fun initAction(){
-
-        Util.apply {
-            loadImage(this@MainActivity,binding.ivImage,R.drawable.ic_android_black_24dp)
-            loadImage(this@MainActivity, binding.ivImagess,R.drawable.ic_baseline_10k_24)
-        }
-
-        binding.btnLogin.setOnClickListener {
-            val email = binding.etEmailvalues.text.takeIf {
-                it != null
-            }?.trim().toString()
-            val password = binding.etPasswordvalues.text.toString()
-            Toast.makeText(this,email,Toast.LENGTH_SHORT).show()
-        }
-    }
+//    private fun initAction(){
+//
+//        Util.apply {
+//            loadImage(this@MainActivity,binding.ivImage,R.drawable.ic_android_black_24dp)
+//            loadImage(this@MainActivity, binding.ivImagess,R.drawable.ic_baseline_10k_24)
+//        }
+//
+//        binding.btnLogin.setOnClickListener {
+//            val email = binding.etEmailvalues.text.takeIf {
+//                it != null
+//            }?.trim().toString()
+//            val password = binding.etPasswordvalues.text.toString()
+//            Toast.makeText(this,email,Toast.LENGTH_SHORT).show()
+//        }
+//    }
 
 
 
