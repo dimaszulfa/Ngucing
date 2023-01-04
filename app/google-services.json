@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "1071955288880",
+    "project_id": "ngucing-a258c",
+    "storage_bucket": "ngucing-a258c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1071955288880:android:ecbb44956e4f8927b9def5",
+        "android_client_info": {
+          "package_name": "com.arcquila.ngucing"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1071955288880-v0mn1bc5f2lkfa536qs27nan1mq1h3st.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.arcquila.ngucing",
+            "certificate_hash": "408dfc0515f3e4dbf910152e2c3d93c8a849a913"
+          }
+        },
+        {
+          "client_id": "1071955288880-2k348enmn8hi30htnnuaja56bs75d3iu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB_sQDVuBrw0HdnBQgptezTwbNPi-psqxs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1071955288880-2k348enmn8hi30htnnuaja56bs75d3iu.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
